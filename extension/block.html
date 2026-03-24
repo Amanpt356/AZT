@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Access Blocked</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Segoe UI;
+    background:#000F5C;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    width:460px;
+    padding:40px;
+    border-radius:14px;
+    text-align:center;
+}
+
+.logo{
+    width:90px;
+}
+
+.title{
+    font-size:22px;
+    margin-top:10px;
+}
+
+.domain{
+    color:#1F51FF;
+    font-size:18px;
+    margin-top:8px;
+}
+
+.desc{
+    margin-top:14px;
+    color:#7C8AA6;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+button{
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    margin:6px;
+    cursor:pointer;
+}
+
+.safe{
+    background:#1F51FF;
+    color:white;
+}
+
+.override{
+    background:#7C8AA6;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="assets/logo.png" class="logo">
+
+<div class="title">Access Blocked</div>
+
+<div class="domain" id="domainName"></div>
+
+<div class="desc">
+AZT_NO prevented access to this website because it may violate security policy.
+</div>
+
+<div class="buttons">
+
+<button class="safe" id="backBtn">
+Return to Safety
+</button>
+
+<button class="override" id="proceedBtn">
+Proceed Anyway
+</button>
+
+</div>
+
+</div>
+
+<script src="block.js"></script>
+
+</body>
+
+</html>
